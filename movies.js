@@ -25,7 +25,10 @@ async function idvalue(event){
 
   const resultEl = document.querySelector('.result__list');
   resultEl.innerHTML = movieData.Search.map((movie)=>resultHTML(movie)).join('');
-  const resultSection = document.querySelector('#results')
+
+  const resultspage = document.querySelector('.outcome');
+  resultspage.classList += ' results'
+  const resultSection = document.querySelector('.outcome')
   resultSection.scrollIntoView({behavior:"smooth"});
 
 
@@ -38,6 +41,7 @@ async function idvalue(event){
 
  function resultHTML(movie) {
     return `
+   
     <div class="result__container">
       <figure class='result__image' ><img src="${movie.Poster}"class="result__img"></figure>
       <div class="result__info">

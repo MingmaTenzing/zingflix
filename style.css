@@ -8,6 +8,18 @@
 }
 
 
+.click:hover{
+    transform: scale(1.1);
+}
+
+.click:active{
+    transform: scale(0.8);
+}
+
+.click{
+    transition: all ease 300ms;
+}
+
 
 .landing_page{
     height: 100vh;
@@ -124,6 +136,10 @@ nav{
 
 }
 
+.search__icon:hover{
+    cursor: pointer;
+}
+
 .search__form{
     position: relative;
 }
@@ -172,6 +188,10 @@ nav{
 }
 
 
+.result__container:hover{
+    cursor: pointer;
+}
+
 
 .result__info{
     padding: 10px;
@@ -199,12 +219,14 @@ nav{
 
 
 .loading__icon{
-    font-size: 60px;
+    font-size: 20px;
     animation: spin 1s infinite linear;
     position: absolute;
-   top: 50%;
-    left: 50%;
-    transform: translate(-50%,0);
+    top: 0;
+    left: 0;
+    top: 405px;
+    left: 600px;
+   
 }
 
 
@@ -232,6 +254,17 @@ nav{
     padding-bottom: 20px;
 }
 
-#results{
+.results{
     height: 100vh;
+    padding-top:48px;
+}
+
+
+.results__h1 {
+    display: none !important;
+    padding-bottom: 32px;
+}
+
+.results .results__h1{
+    display: block !important;
 }
