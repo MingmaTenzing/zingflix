@@ -37,8 +37,10 @@ async function idvalue(event){
 
 
 
-function movieinfo() {
-  localStorage.setItem('id', movie.imdbID)
+function movieinfo(imdbID) {
+  localStorage.setItem('id', imdbID);
+  window.location.href = `${window.location.origin}/info.html`
+  console.log(imdbID)
   
 
  }
@@ -46,7 +48,7 @@ function movieinfo() {
 
  function resultHTML(movie) {
     return `
-   <div class='result__card' onclick="movieinfo(${movie.imdbID})">
+   <div class='result__card'onclick="movieinfo('${movie.imdbID}')">
     <div class="result__container">
       <figure class='result__image' ><img src="${movie.Poster}"class="result__img"></figure>
       <div class="result__info">
