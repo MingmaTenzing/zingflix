@@ -37,11 +37,16 @@ async function idvalue(event){
 
 
 
+function movieinfo() {
+  localStorage.setItem('id', movie.imdbID)
+  
+
+ }
 
 
  function resultHTML(movie) {
     return `
-   
+   <div class='result__card' onclick="movieinfo(${movie.imdbID})">
     <div class="result__container">
       <figure class='result__image' ><img src="${movie.Poster}"class="result__img"></figure>
       <div class="result__info">
@@ -50,10 +55,12 @@ async function idvalue(event){
       <h4 class="result__imdbid"> IMDb ID: <span>${movie.imdbID}</span> </h4>
       <h4 class="result__type"> Type: <span> ${movie.Type} </span></h4>
     </div>
+    </div>
     </div>`
  }
 
 
+ 
 
 
 
