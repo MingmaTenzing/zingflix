@@ -16,17 +16,18 @@
 <body>
     <section class="landing_page">
     
-    <!--  <div>
+    <div>
         <figure class="background__img">
           <img src="./assests/bg.jpg" class='background__image'alt="">
-          <div class="content"></div>
+        
         </figure>
       </div>
-    --> 
+   
+   
   <nav>
    
         <div class="logo">
-            ZINGFLIX
+            <img src="./assests/logo.png" class="logo__image">
         </div>
         <ul class="nav__link-container">
             <li class="nav__links"><a href="#" class="nav__link">About </a></li>
@@ -41,8 +42,10 @@
   </nav>
 
   <div class="welcome__intro">
-
-    <h1 class="h1__intro"><span class="red ">ZINGFLIX</span></h1>
+<figure>
+  <img src="./assests/logo.png" class="logo__main" alt="">
+</figure>
+   <!-- <h1 class="h1__intro"><span class="red ">ZINGFLIX</span></h1>-->
     <h2 class="h2__intro"> Movies & Series information in your hands</h2>
     <p class="intro__para">The one and only site you've been looking for is here</p>
 
@@ -53,7 +56,9 @@
   <div class="search">
     <form class="search__form" onsubmit="idvalue(event)" >
        <input type="text" placeholder="Search Movies, Series, Anime" required class="search__bar" id="search">
-       <button class="submit-button"> <i class="fa-solid fa-magnifying-glass search__icon"></i></button>
+    <i class="fa-brands fa-searchengin search__icon" onclick="idvalue(event)"></i>
+       
+     
        <div class="loading__stage"></div>
        
     
@@ -63,6 +68,8 @@
        
     
   </div>
+
+
 
     
  

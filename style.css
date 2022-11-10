@@ -7,6 +7,44 @@
 
 }
 
+.logo__image{
+    width: 100px;
+}
+
+.logo__main{
+    width: 300px;
+    margin-bottom: 32px;
+}
+
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+
+.background__img {
+    position: absolute;
+    z-index: -100;
+
+   
+   
+}
+
+.background__image{
+   
+    width: 100%;
+    height: auto;
+    
+    filter: brightness(15%);
+    
+}
+
+
 
 .click:hover{
     transform: scale(1.1);
@@ -22,6 +60,7 @@
 
 
 .landing_page{
+    
     height: 100vh;
 }
 
@@ -46,7 +85,7 @@ nav{
 
 .nav__link{
     text-decoration: none;
-    color: black;
+    color: white;
 
 
 }
@@ -80,12 +119,15 @@ nav{
 
 
 .welcome__intro{
+    width: 100%;
+    max-width: 100%;
+   
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 150px;
-    position: relative;
+    
 }
 
 .h1__intro{
@@ -108,6 +150,7 @@ nav{
 
 .search{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -119,21 +162,20 @@ nav{
     border: 2px solid black;
     text-align: center;
     position: relative;
+    outline: none;
+  
     
 }
 
-#form input{
-    padding: 10px 30px;
-}
 
 .search__icon{
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
     top: 0;
     left: 0;
     left: 300px;
     top: 12px;
-    list-style: none;
+    color: black;
 
     
 
@@ -180,10 +222,11 @@ nav{
 .result__container{
     width: 100%;
    max-width: 200px;
+
    border-radius: 20px;
    overflow: hidden;
    
-   box-shadow: 0px 10px 10px rgba(0,0,0,0.45);
+   box-shadow: 0px 10px 10px rgba(255, 0, 0, 0.45);
    
    margin: 20px;
    
@@ -241,6 +284,7 @@ nav{
 
 .loading__line{
     
+    
      width: 100%;
      max-width: 85%;
      border-radius: 10px;
@@ -248,11 +292,13 @@ nav{
      margin: 0 auto;
      background-color: red;
      animation: loadingstate 600ms linear infinite;
+     
  }
 
 .results__h1{
     text-align: center;
     padding-bottom: 20px;
+    font-size: 32px;
 }
 
 .results{
@@ -289,8 +335,3 @@ nav{
   
 }
 
-
-
-.submit-button{
-    list-style: none;
-}
