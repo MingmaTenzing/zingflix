@@ -1,3 +1,4 @@
+let isloading;
 
 
 async function idvalue(event){
@@ -14,17 +15,29 @@ async function idvalue(event){
 
  async function callAPI (searchInput) {
   
-  const loading = document.querySelector('.result__list')
-  loading.classList += ' loading'
+
+  if (!isloading) {
+    const loading = document.querySelector('.loading__stage')
+    loading.classList += ' loading__line'
+    
+   
+
+  }
+
+
+
+
   const data = await fetch (`https://www.omdbapi.com/?s=${searchInput}&apikey=19d18a42`)
   
   const movieData = await data.json();
-  loading.classList.remove += '.loading'
+ 
 
   console.log(movieData.Search)
 
   const resultEl = document.querySelector('.result__list');
   resultEl.innerHTML = movieData.Search.map((movie)=>resultHTML(movie)).join('');
+  const loading = document.querySelector('.loading__stage')
+  loading.classList.remove('loading__line')
 
   const resultspage = document.querySelector('.outcome');
   resultspage.classList += ' results'

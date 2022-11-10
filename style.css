@@ -133,6 +133,7 @@ nav{
     left: 0;
     left: 300px;
     top: 12px;
+    list-style: none;
 
     
 
@@ -145,6 +146,7 @@ nav{
 .search__form{
     position: relative;
 }
+
 
 
 
@@ -220,16 +222,7 @@ nav{
 
 
 
-.loading__icon{
-    font-size: 20px;
-    animation: spin 1s infinite linear;
-    position: absolute;
-    top: 0;
-    left: 0;
-    top: 405px;
-    left: 600px;
-   
-}
+
 
 
 @keyframes spin {
@@ -242,14 +235,20 @@ nav{
 }
 
 
-.loading__icon{
-    display: none !important;
-}
 
 
-.loading .loading__icon {
-    display: block !important
-}
+
+
+.loading__line{
+    
+     width: 100%;
+     max-width: 85%;
+     border-radius: 10px;
+     height: 4px;
+     margin: 0 auto;
+     background-color: red;
+     animation: loadingstate 600ms linear infinite;
+ }
 
 .results__h1{
     text-align: center;
@@ -269,4 +268,29 @@ nav{
 
 .results .results__h1{
     display: block !important;
+}
+
+
+
+
+
+@keyframes loadingstate {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+       
+        width: 100%;
+     
+        
+    }
+
+  
+}
+
+
+
+.submit-button{
+    list-style: none;
 }
