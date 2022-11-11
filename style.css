@@ -7,6 +7,10 @@
 
 }
 
+.menu__bar{
+    display: none;
+}
+
 .logo__image{
     width: 100px;
 }
@@ -335,3 +339,126 @@ nav{
   
 }
 
+
+
+
+
+@media (max-width:768px) {
+
+    .menu__bar{
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+        max-width: 650px;
+    }
+
+   li:first-child{
+    display: none;
+   
+   }
+
+.welcome__intro{
+    margin-top: 0;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+.main__page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.background__image{
+    width: 1500px;
+    height: 100vh;
+    
+
+}
+
+.background__img{
+    top: 0;
+    left: 0;
+    left: -500px;
+
+}
+
+}
+
+
+
+
+@media (max-width:480px) {
+
+    
+nav {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 0;
+}
+
+.menu__bar{
+    display: block;
+}
+
+li{
+    display: none;
+}
+
+.logo__image{
+    width: 70px;
+}
+
+.logo__main{
+    width: 150px;
+}
+.h2__intro{
+    font-size: 16px;
+}
+
+.intro__para{
+    font-size: 12px;
+}
+
+.search__bar{
+    padding: 16px 30px;
+}
+
+.search__icon{
+    left: 280px;
+    top: 15px;
+}
+
+
+.results__h1{
+    font-size: 20px;
+}
+
+.result__container{
+    max-width: 140px;
+}
+
+.result__title{
+    font-size: 14px;
+}
+
+.result__year, .result__imdbid, .result__type {
+    font-size: 10px;
+}
+
+.background__image{
+    width: auto;
+    height: 100vh;
+}
+
+
+}

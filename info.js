@@ -4,7 +4,7 @@ const movieId = localStorage.getItem('id')
 async function showMovieInfo() {
     const data = await fetch (`http://www.omdbapi.com/?i=${movieId}&apikey=19d18a42`);
     const moviedetails = await data.json();
-    console.log(Object.values(moviedetails))
+    console.log(moviedetails)
 }
 
 showMovieInfo()
