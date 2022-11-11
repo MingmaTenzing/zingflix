@@ -226,6 +226,7 @@ nav{
 .result__container{
     width: 100%;
    max-width: 200px;
+   
 
    border-radius: 20px;
    overflow: hidden;
@@ -459,6 +460,17 @@ li{
     width: auto;
     height: 100vh;
 }
+
+
+.result__list {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  
+    flex-wrap: wrap;
+}
+
 
 
 }
