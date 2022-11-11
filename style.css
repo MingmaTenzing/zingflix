@@ -457,9 +457,17 @@ li{
 }
 
 .background__image{
-    width: auto;
+    width: 100%;
+    max-width: 1000px;
     height: 100vh;
+    
+
 }
+
+.background__img{
+    top: 0;
+    left: 0;
+    left: -400px;}
 
 
 .result__list {
