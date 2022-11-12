@@ -138,3 +138,27 @@ h4, p{
     font-weight: 200;
     
 }
+
+.movie__info--page{
+    position: relative;
+}
+
+.movie__container {
+    position: relative;
+}
+.fa-spinner{
+    position: absolute;
+    font-size: 50px;
+    animation: spin 1s linear infinite;
+  
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
