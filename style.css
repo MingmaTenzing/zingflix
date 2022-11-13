@@ -8,7 +8,8 @@
 }
 
 .menu__bar{
-    display: none;
+    display: none !important;
+    
 }
 
 .logo__image{
@@ -361,7 +362,7 @@ nav{
    }
 
 .welcome__intro{
-    margin-top: 0;
+    margin-top: -200px;
 }
 
 nav{
@@ -380,8 +381,10 @@ nav{
 
 
 .background__image{
-    width: 1500px;
+    width: 100%;
+    max-width: 1500px;
     height: 100vh;
+    object-fit: cover;
     
 
 }
@@ -389,7 +392,7 @@ nav{
 .background__img{
     top: 0;
     left: 0;
-    left: -500px;
+    left: -200px;
 
 }
 
@@ -413,7 +416,7 @@ nav {
 }
 
 .menu__bar{
-    display: block;
+    display: block !important;
 }
 
 li{
@@ -462,8 +465,8 @@ li{
 }
 
 .background__image{
-    width: 100%;
-    max-width: 1000px;
+ 
+   
     height: 100vh;
     
 
@@ -472,7 +475,7 @@ li{
 .background__img{
     top: 0;
     left: 0;
-    left: -400px;}
+    }
 
 
 .result__list {
