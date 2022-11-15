@@ -34,7 +34,7 @@
             <li class="nav__links"><a href="#" class="nav__link">Contact </a></li>
             <li class="nav__links"><a href="#" class="nav__link">Search </a></li>
             <li class="nav__links click"><a href="#" class="nav__link log__in-button ">Log In </a></li>
-            <i class="fa-solid fa-bars menu__bar"></i>
+            <i class="fa-solid fa-bars menu__bar" onclick="openmodal()"></i>
             
     
            
@@ -43,6 +43,16 @@
    
   </nav>
 
+  <div class="modal">
+    <div class="links__container">
+    <div class="modal__links"> About </div>
+    <div class="modal__links"> Contact </div>
+    <div class="modal__links"> Info </div>
+    <div class="modal__links">Log In</div>
+    </div>
+    <i class="fa-solid fa-xmark" onclick="closebutton()"></i>
+  </div>
+ 
   <div class="main__page">
 
   <div class="welcome__intro">

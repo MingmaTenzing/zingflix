@@ -153,6 +153,9 @@ h4, p{
   
 }
 
+.menu__bar{
+    display: none !important;
+}
 
 @keyframes spin {
     0% {

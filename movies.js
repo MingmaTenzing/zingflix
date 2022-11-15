@@ -1,5 +1,21 @@
 let isloading;
+let ismodalopen = false;
 
+function openmodal() {
+  if (ismodalopen) {
+    ismodalopen = false;
+    return document.body.classList.remove('modal__open')
+  }
+  ismodalopen = true;
+  document.body.classList += (' modal__open')
+}
+
+
+function closebutton() {
+  
+  document.body.classList.remove('modal__open')
+  ismodalopen = false;
+}
 
 async function idvalue(event){
     

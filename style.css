@@ -285,6 +285,10 @@ nav{
 
 
 
+.modal {
+   visibility: hidden;
+}
+
 
 
 
@@ -403,6 +407,56 @@ nav{
 
 @media (max-width:480px) {
 
+    .modal{
+        visibility: hidden;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        top:1000px;
+        left: 0;
+        
+        z-index: -1;
+        transition: 300ms ease all;
+
+    }
+
+    .modal__open .modal{
+        visibility: visible;
+        z-index: 60;
+        top:0
+    }
+
+    .links__container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+
+    }
+
+    .modal__links{
+        font-size: 18px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .fa-xmark{
+        cursor: pointer;
+        position: absolute;
+        color: red;
+        top: 0;
+        right: 0;
+        top: 40px;
+        right: 40px;
+        font-size: 30px;
+
+    }
+
    body{
     width: 100%;
     max-width: 480px;
@@ -417,6 +471,7 @@ nav {
 
 .menu__bar{
     display: block !important;
+    cursor: pointer;
 }
 
 li{
